@@ -12,6 +12,8 @@ export class DashboardService {
       id: 1,
       label: 'Subscribers',
       content: Subscribers,
+      rows: 2,
+      columns: 2,
     },
     {
       id: 2,
@@ -25,4 +27,17 @@ export class DashboardService {
     const addedIds = this.addedWidgets().map((w) => w.id);
     return this.widgets().filter((w) => !addedIds.includes(w.id));
   });
+
+  addWidget(w: WidgetInterface) {
+    this.addedWidgets.set([...this.addedWidgets(), { ...w }]);
+  }
+
+  updateWidget(id: number, widget: Partial<WidgetInterface>) {
+    const index = this.addedWidgets().findIndex((w) => w.id === id);
+    if (index !== -1) {
+      const newWidgets = [...this.addedWidgets()];
+      newWidgets[index] = { ...newWidgets[index], ...widget };
+      this.addedWidgets.set(newWidgets);
+    }
+  }
 }
