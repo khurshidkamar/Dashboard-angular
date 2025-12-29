@@ -19,6 +19,7 @@ $theme: mat.define-theme(
 html,
 body {
   height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .m-0 {
   margin: 0 !important;
@@ -26,4 +27,28 @@ body {
 
 .p-0 {
   padding: 0 !important;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mb-8 {
+  margin: 10px 0;
+}
+.stat {
+  font-size: 24px;
+  margin: 0 5px 0 0;
+}
+
+.text-green {
+  color: rgb(0, 163, 0);
+}
+.text-dim-gray {
+  opacity: 0.8;
+}
+.stat-subtext {
+  font-size: 14px;
 }

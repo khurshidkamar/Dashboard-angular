@@ -26,16 +26,22 @@
   top: 0;
   right: 0;
 }
-.move-forward-button{
+.move-forward-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
 }
 
-.move-backward-button{
+.move-backward-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
- left: 0;
+  left: 0;
+}
+.remove-widget-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #cc0000;
 }

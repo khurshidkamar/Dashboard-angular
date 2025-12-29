@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-subscribers',
+  selector: 'app-watch-time',
   imports: [MatIcon],
-  templateUrl: './subscribers.html',
-  styleUrl: './subscribers.scss',
+  templateUrl: './watch-time.html',
+  styleUrl: './watch-time.scss',
 })
-export class Subscribers {}
+export class WatchTime {}

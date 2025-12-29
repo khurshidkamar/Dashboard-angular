@@ -6,4 +6,6 @@ export interface WidgetInterface {
   content: Type<unknown>;
   rows?: number;
   columns?: number;
+  backgroundColor?: string;
+  color?: string;
 }
